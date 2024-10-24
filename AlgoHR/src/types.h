@@ -8,7 +8,6 @@
  * For example, if your accelerometer uses 12bits then an int16_t would suffice.
  * The value is assumed to be integer, but it can be signed, indicating direction of the acceleration.
  */
-typedef int16_t accel_t;
 
 /*
  * Type used for something bigger than the acceleration, for example for the magnitude or an accumulator.
@@ -31,6 +30,7 @@ typedef int16_t time_delta_ms_t;
  * The size of this variable depends on what is the maximum number of steps you are willing to show and store.
  * Example: if the step count is reset every 24h and one walks no more than 20k / day (reasonable) -> 16 bits should be enough.
  */
-typedef uint16_t steps_t;
+typedef int bpm_t;
+typedef int ppg_t;
 
 #endif
