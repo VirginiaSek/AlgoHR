@@ -17,3 +17,4 @@ void dummy_heartrate_init();
 int dummy_heartrate(time_delta_ms_t delta_ms, int ppg_raw);
  
 #endif
+
